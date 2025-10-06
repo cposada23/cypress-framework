@@ -1,0 +1,59 @@
+{
+  "name": "cypressframework",
+  "version": "1.0.0",
+  "description": "Comprehensive Cypress Test Automation Framework with TypeScript",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run",
+    "test:local": "cypress run --env environment=local",
+    "test:dev": "cypress run --env environment=dev",
+    "test:qa": "cypress run --env environment=qa",
+    "test:staging": "cypress run --env environment=staging",
+    "test:production": "cypress run --env environment=production",
+    "test:smoke": "cypress run --env grepTags=@smoke",
+    "test:regression": "cypress run --env grepTags=@regression",
+    "test:api": "cypress run --env grepTags=@api",
+    "test:e2e": "cypress run --env grepTags=@e2e",
+    "test:integration": "cypress run --env grepTags=@integration",
+    "test:critical": "cypress run --env grepTags=@critical",
+    "test:headed": "cypress run --headed --browser chrome",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:edge": "cypress run --browser edge",
+    "test:parallel": "cypress run --record --parallel",
+    "report:merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json",
+    "report:generate": "marge cypress/reports/merged-report.json -f report -o cypress/reports/html",
+    "report:clean": "rm -rf cypress/reports cypress/screenshots cypress/videos",
+    "clean": "npm run report:clean",
+    "pretest": "npm run clean"
+  },
+  "keywords": [
+    "cypress",
+    "typescript",
+    "test-automation",
+    "e2e-testing",
+    "api-testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cypress/grep": "^5.0.0",
+    "@faker-js/faker": "^10.0.0",
+    "@types/node": "^24.6.2",
+    "cypress": "^15.3.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-multi-reporters": "^2.0.5",
+    "dotenv": "^17.2.3",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

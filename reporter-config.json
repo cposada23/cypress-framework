@@ -1,0 +1,15 @@
+{
+  "reporterEnabled": "cypress-mochawesome-reporter, spec",
+  "cypressMochawesomeReporterReporterOptions": {
+    "reportDir": "cypress/reports",
+    "charts": true,
+    "reportPageTitle": "Cypress Test Report",
+    "embeddedScreenshots": true,
+    "inlineAssets": true,
+    "saveAllAttempts": false,
+    "overwrite": false,
+    "html": true,
+    "json": true
+  }
+}
+

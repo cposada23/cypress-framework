@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "description": "High-performance laptop for professionals",
+    "price": 1299.99,
+    "category": "Electronics",
+    "sku": "LAPTOP001",
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse",
+    "price": 29.99,
+    "category": "Accessories",
+    "sku": "MOUSE001",
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "Mechanical Keyboard",
+    "description": "RGB mechanical keyboard with blue switches",
+    "price": 89.99,
+    "category": "Accessories",
+    "sku": "KEYB001",
+    "inStock": false
+  }
+]
+
